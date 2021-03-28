@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Adrián Morató">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BICYRIDE-Colaborador</title>
+    <link rel="shortcut icon" href="./img/logo/logo.png" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header id="headerColaborador" class="py-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="pl-3 pl-lg-0">
+                        <img src="./img/logo/logo.png" alt="...">
+                    </div>
+                    <div class="my-auto align-self-center">
+                        <h1 class="text-white">Colaborador</h1>
+                    </div>
+                    <div class="my-auto">
+                        <a class="nav-link enlace-nav" href="login.html">
+                            <i class="fas fa-user h3 text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!--Fin NavBar -->
+
+    <!-- Mostrar Socios -->
+    <section id="colaborador">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center pb-5">
+                        <label><i class="fas fa-search pr-3 text-white h5"></i> </label>
+                        <input class="form-control w-50 d-inline inputGreen" type="text" id="search" name="search"
+                            placeholder="Buscar socio">
+                    </div>
+                    <h1 class="text-white">Socios</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Estado</th>
+                                <th>Username</th>
+                                <th>Nombre</th>
+                                <th>Apellidos</th>
+                                <th>Email</th>
+                                <th>DNI</th>
+                                <th>Fecha Nacimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="pagado">
+                                <td>10</td>
+                                <td>Pagado</td>
+                                <td>Amorato</td>
+                                <td>Adrian</td>
+                                <td>Morato Rafet</td>
+                                <td>amorato2gmail.com</td>
+                                <td>012345678A</td>
+                                <td>01/02/2000</td>
+                            </tr>
+                            <tr class="noPagado">
+                                <td>11</td>
+                                <td>No Pagado</td>
+                                <td>Amorato</td>
+                                <td>Adrian</td>
+                                <td>Morato Rafet</td>
+                                <td>amorato2gmail.com</td>
+                                <td>012345678A</td>
+                                <td>01/02/2000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

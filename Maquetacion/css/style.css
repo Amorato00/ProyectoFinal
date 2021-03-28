@@ -1,19 +1,113 @@
 * {
-    text-decoration: none !important;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	text-decoration: none !important;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+    font-family: "fuente-pagina";
+    src: url('../font/PTSansNarrow-Bold.ttf') format('truetype');
+}
+
+body {
+	font-family: "fuente-pagina";
+}
+
+html,body{
+	margin:0px;
+	height:100%;
 }
 
 
 /* Estandar */
+
 a {
-    text-decoration: none !important;
+	text-decoration: none !important;
 }
 
 li {
-    list-style: none !important;
+	list-style: none !important;
 }
+
+.inputGreen {
+	border: 1px solid #9bd6bf !important;
+}
+
+.inputGreen:focus {
+	border: 1px solid #43b287 !important;
+}
+
+.obligatorio {
+	color: red;
+}
+
+.textGreen {
+	color: #43b287;
+}
+
+.btnEstandar {
+	background-color: #43b287 !important;
+	color: white !important;
+}
+
+.btnEstandar:hover {
+	background-color: #166446 !important;
+}
+
+.btnEstandar2 {
+	background-color: white !important;
+	color: #166446 !important;
+}
+
+.btnEstandar2:hover {
+	background-color: rgb(201, 201, 201) !important;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: rgb(75, 75, 75);
+}
+
+/* Estadan Socio y Junta Directiva */
+
+.header img {
+	width: 5rem;
+	height: auto;
+}
+
+.header div:last-of-type{
+	color: rgb(75, 75, 75);
+}
+
+.navLeft {
+	background-color: rgb(75, 75, 75);
+	height: 100vh;
+}
+
+.navLeft a{
+	background-color: rgb(75, 75, 75);
+	color: white;
+	border: 0;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	border-radius: 0;
+}
+
+.navLeft a:hover{
+	background-color: white;
+	color: #43b287;
+	border: solid 0.3rem rgb(75, 75, 75);
+	border-radius: 0.5rem;
+}
+
+.navLeft .active{
+	background-color: white;
+	color: #43b287;
+	border: solid 0.3rem rgb(75, 75, 75);
+	border-radius: 0.5rem;
+}
+
 
 
 /*=============================================
@@ -21,291 +115,417 @@ li {
 =============================================*/
 
 .menu-superior {
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    z-index: 2;
-    border-bottom: 0.5rem solid #43b287;
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	z-index: 2;
+	border-bottom: 0.5rem solid #43b287;
+}
+
+#carruselHome {
+	padding-top: 7.5rem !important;
+	color: white;
+	-webkit-text-stroke: 0.03rem rgb(75, 75, 75);
+	z-index: 0;
+}
+
+#carruselHome img {
+	width: 100%;
+	height: 20% !important;
 }
 
 #contenido {
-    padding-top: 7.5rem !important;
+	padding-top: 7.5rem !important;
 }
 
 .fila1-img {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .fila1-texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    -webkit-text-stroke: 0.03rem rgb(75, 75, 75);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	-webkit-text-stroke: 0.03rem rgb(75, 75, 75);
 }
 
 #logo {
-    color: rgb(75, 75, 75);
+	color: rgb(75, 75, 75);
 }
 
 #logo img {
-    height: auto;
-    width: 5.4rem;
+	height: auto;
+	width: 5.4rem;
 }
 
 #logo:hover {
-    color: #43b287;
+	color: #43b287;
 }
 
 .marcar {
-    color: #43b287;
-    text-decoration: overline !important;
+	color: #43b287 !important;
+	text-decoration: overline !important;
 }
 
 .enlace-nav {
-    color: rgb(75, 75, 75);
+	color: rgb(75, 75, 75);
 }
 
 .enlace-nav:hover {
-    color: #43b287;
-    text-decoration: overline !important;
+	color: #43b287;
+	text-decoration: overline !important;
 }
 
 .partner {
-    height: auto;
-    width: 70%;
+	height: auto;
+	width: 70%;
 }
 
 #noticias-home {
-    background-color: #43b287;
+	background-color: #43b287;
 }
 
 #quines-somos {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-20%, -50%);
-    color: rgb(75, 75, 75);
-    text-align: end;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-20%, -50%);
+	color: rgb(75, 75, 75);
+	text-align: end;
 }
 
 #socio {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #43b287;
-    border-radius: 0.3rem;
-    width: 40%;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #43b287;
+	border-radius: 0.3rem;
+	width: 40%;
 }
 
 #footer {
-    background-color: #43b287;
+	background-color: #43b287;
 }
 
 #redes-sociales {
-    margin-top: -13rem;
+	margin-top: -13rem;
 }
 
 #redes-sociales a {
-    color: #43b287;
+	color: #43b287;
 }
 
 #redes-sociales a:hover {
-    color: #166446;
+	color: #166446;
 }
 
 #enlaces-footer a {
-    color: white;
+	color: white;
 }
 
 #enlaces-footer a:hover {
-    color: rgb(75, 75, 75);
+	color: rgb(75, 75, 75);
 }
 
 #imagen-lateral-2 {
-    width: 100%;
-    height: 38.75%;
+	width: 100%;
+	height: 38.75%;
 }
 
+#menuHamburguesa i {
+	color: #43b287 !important;
+	font-size: 2.5rem;
+}
+
+#navbarMenuHome {
+	justify-content: flex-end;
+}
 
 /*=====  Fin Home ======*/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/*=============================================
+=                 Login                       =
+=============================================*/
 
-    /* Home Responsive */
-
-    h4 {
-        font-size: 0.8rem !important;
-    }
-
-    #quines-somos {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-20%, -50%);
-        color: white;
-        text-align: end;
-    }
-
-    #socio {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #43b287;
-        border-radius: 0.3rem;
-        width: 80% !important;
-        padding-right: 1.5rem;
-    }
-
-    #socio h1{
-        font-size: 0.8rem !important;
-    }
-
-    #redes-sociales {
-        margin-top: 0rem !important;
-    }
-
-    /* Fin Home Responsive*/
-    
+#login {
+	padding-top: 11.5rem;
+	padding-bottom: 4rem;
 }
+
+#login > div {
+	border: solid 4px #43b287;
+}
+
+#boton_login {
+	background-color: #43b287;
+	color: white;
+}
+
+#boton_login:hover {
+	background-color: #166446;
+}
+
+#login span > a {
+	color: #43b287 !important;
+}
+
+#login span > a:hover {
+	color: #166446 !important;
+}
+
+/*=====  Fin Login ======*/
+
+/*=============================================
+=                 Register                    =
+=============================================*/
+
+#register {
+	padding-top: 11.5rem;
+}
+
+#register > div {
+	border: solid 4px #43b287;
+}
+
+/*=====  Fin Register ======*/
+
+/*=============================================
+=                 Colaborador                 =
+=============================================*/
+
+#colaborador {
+	background-color: rgb(75, 75, 75);
+	padding-top: 10rem;
+	height: 100vh;
+}
+
+#colaborador table{
+	color: white;
+}
+
+.pagado {
+	background-color: #459e7c;
+}
+
+.noPagado {
+	background-color: #c05a5a;
+}
+
+#headerColaborador {
+	background-color: #43b287;
+	position: fixed;
+	width: 100%;
+}
+
+#headerColaborador img{
+	width: auto;
+	height: 5rem;
+}
+
+#colaboladorSingleSocio {
+	background-color: rgb(75, 75, 75);
+	height: 100vh;
+	padding-top: 7rem;
+}
+
+#colaboladorSingleSocio td{
+	padding-bottom: 1.5rem;
+}
+
+#colaboladorSingleSocio table input {
+	background-color:#43b287 !important;
+	color: white !important;
+}
+
+/*=====  Fin Colaborador ======*/
+
+/*=============================================
+=             Junta directiva                 =
+=============================================*/
+
+#contenidoJuntaDirectiva {
+	background-color: #43b287;
+}
+
+
+/*=====  Fin Junta directiva  ======*/
+
+
+/*=============================================
+=             Socio                 =
+=============================================*/
+
+#contenidoSocio {
+	background-color: #43b287;
+}
+
+/*=====  Fin Junta directiva  ======*/
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+	/* Home Responsive */
+	h4 {
+		font-size: 0.8rem !important;
+	}
+	#quines-somos {
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translate(-20%, -50%);
+		color: white;
+		text-align: end;
+	}
+	#socio {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #43b287;
+		border-radius: 0.3rem;
+		width: 80% !important;
+		padding-right: 1.5rem;
+	}
+	#socio h1 {
+		font-size: 0.8rem !important;
+	}
+	#redes-sociales {
+		margin-top: 0rem !important;
+	}
+	/* Fin Home Responsive*/
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (max-width: 768px) {
-
-    /* Home Responsive */
-
-    h1 {
-        font-size: 2rem !important;
-    }
-
-    h5 {
-        font-size: 0.8rem !important;
-    }
-
-    h4 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.5rem !important;
-    }
-
-    p {
-        font-size: 1rem !important;
-    }
-
-    small {
-        font-size: 0.6rem !important;
-    }
-
-    li {
-        font-size: 0.6rem !important;
-    }
-
-    h3 {
-        font-size: 1rem !important;
-    }
-
-    .btn {
-        font-size: 0.5rem !important;
-    }
-
-    #socio {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #43b287;
-        border-radius: 0.3rem;
-        width: 40%;
-        padding-right: 1.5rem;
-    }
-    
-    #redes-sociales {
-        margin-top: 0rem !important;
-    }
-
-    /* Fin Home Responsive */
-
+	/* Home Responsive */
+	h1 {
+		font-size: 2rem !important;
+	}
+	h5 {
+		font-size: 0.8rem !important;
+	}
+	h4 {
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 1.5rem !important;
+	}
+	p {
+		font-size: 1rem !important;
+	}
+	small {
+		font-size: 0.6rem !important;
+	}
+	li {
+		font-size: 0.6rem !important;
+	}
+	h3 {
+		font-size: 1rem !important;
+	}
+	#socio {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #43b287;
+		border-radius: 0.3rem;
+		width: 40%;
+		padding-right: 1.5rem;
+	}
+	#redes-sociales {
+		margin-top: 0rem !important;
+	}
+	/* Fin Home Responsive */
 }
+
 
 
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (max-width: 992px) {
+	/* Home Responsive */
+	#socio {
+		position: absolute;
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #43b287;
+		border-radius: 0.3rem;
+		width: 40%;
+		padding-right: 1.5rem;
+	}
+	#redes-sociales {
+		margin-top: 0rem !important;
+	}
+	#navbarMenuHome {
+		background-color: #43b287;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+		border-radius: 1rem;
+	}
+	#navbarMenuHome li {
+		padding-left: 2rem;
+	}
+	#navbarMenuHome a {
+		color: white;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	#navbarMenuHome a:hover {
+		text-decoration: none !important;
+		color: rgb(75, 75, 75);
+	}
+	#navbarMenuHome .marcar {
+		text-decoration: none !important;
+		color: rgb(75, 75, 75) !important;
+	}
+	/* Fin Home Responsive */
 
-    /* Home Responsive */
-
-    #socio {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #43b287;
-        border-radius: 0.3rem;
-        width: 40%;
-        padding-right: 1.5rem;
-    }
-    
-    #redes-sociales {
-        margin-top: 0rem !important;
-    }
-
-    /* Fin Home Responsive */
+	#colaboladorSingleUser {
+		height: 100%;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
-
-    /* Home Responsive */
-
-    #socio {
-        width: 50%;
-        padding-right: 1.5rem;
-    }
-
-    #redes-sociales {
-        margin-top: -8rem;
-    }
-
-    /* Fin Home Responsive */
+	/* Home Responsive */
+	#socio {
+		width: 50%;
+		padding-right: 1.5rem;
+	}
+	#redes-sociales {
+		margin-top: -8rem;
+	}
+	/* Fin Home Responsive */
 }
 
 @media only screen and (max-width: 1200px) {
-
-    /* Home Responsive */
-
-    #socio {
-        width: 50%;
-        padding-right: 1.5rem;
-    }
-
-    #redes-sociales {
-        margin-top: -8rem;
-    }
-
-    /* Fin Home Responsive */
+	/* Home Responsive */
+	#socio {
+		width: 50%;
+		padding-right: 1.5rem;
+	}
+	#redes-sociales {
+		margin-top: -8rem;
+	}
+	/* Fin Home Responsive */
 }
 
 @media only screen and (max-width: 1500px) {
-
-    /* Home Responsive */
-
-    #socio {
-        width: 50%;
-        padding-right: 1.5rem;
-    }
-
-    #redes-sociales {
-        margin-top: -8rem;
-    }
-
-    /* Fin Home Responsive */
+	/* Home Responsive */
+	#socio {
+		width: 50%;
+		padding-right: 1.5rem;
+	}
+	#redes-sociales {
+		margin-top: -8rem;
+	}
+	/* Fin Home Responsive */
 }
-
-
-
-

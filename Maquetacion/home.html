@@ -1,384 +1,357 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Adrián Morató">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BYCERIDE</title>
-
-    <link rel="shortcut icon" href="./img/logo/logo.png" />
-
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-</head>
-
-<body>
-    <!-- Navbar -->
-    <header class="menu-superior">
-        <div class="container">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="author" content="Adrián Morató">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BICYRIDE</title>
+      <link rel="shortcut icon" href="./img/logo/logo.png" />
+      <link rel="stylesheet" href="./css/bootstrap-grid.css">
+      <link rel="stylesheet" href="./css/bootstrap.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="./js/bootstrap.js"></script>
+   </head>
+   <body>
+      <!-- Navbar -->
+      <header class="menu-superior">
+         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand d-flex align-items-center" href="#" id="logo">
-                    <img src="./img/logo/logo.png" alt="Logo">
-                    <h3 class="d-md-inline d-none d-md-block">BYCIRYDE</h3>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link marcar enlace-nav" href="#">Home <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle enlace-nav" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Noticias
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Últimas noticias</a>
-                                <a class="dropdown-item" href="#">Ver todas</a>
-                            </div>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link enlace-nav" href="#">¿Quiénes somos?</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link enlace-nav" href="#">Contactanos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle enlace-nav" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Socio
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Ventajas de ser socio</a>
-                                <a class="dropdown-item" href="#">Ser socio</a>
-                                <a class="dropdown-item" href="#">Acceder</a>
-                            </div>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link enlace-nav" href="#">Lupa</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link enlace-nav" href="#">ES</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link enlace-nav" href="#">Login</a>
-                        </li>
-                    </ul>
-                </div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenuHome"
+                  aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"
+                  id="menuHamburguesa">
+               <i class="fas fa-bars"></i>
+               </button>
+               <a class="navbar-brand d-flex align-items-center" href="#" id="logo">
+                  <img src="./img/logo/logo.png" alt="Logo">
+                  <h3 class="d-md-inline d-none d-md-block pl-4">BYCIRYDE</h3>
+               </a>
+               <a class="nav-link enlace-nav d-block d-lg-none" href="login.html">
+               <i class="fas fa-user h3"></i>
+               </a>
+               <div class="collapse navbar-collapse" id="navbarMenuHome">
+                  <ul class="navbar-nav ">
+                     <li class="nav-item active d-block d-lg-none">
+                        <label><i class="fas fa-search pr-3 text-white h5"></i> </label>
+                        <input class="form-control w-50 d-inline" type="text" id="search" name="search"
+                           placeholder="Search">
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link marcar enlace-nav" href="#">Home</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle enlace-nav" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Noticias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#">Últimas noticias</a>
+                           <a class="dropdown-item" href="#">Ver todas</a>
+                        </div>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link enlace-nav" href="#">¿Quiénes somos?</a>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link enlace-nav" href="#">Contactanos</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle enlace-nav" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Socio
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#">Ventajas de ser socio</a>
+                           <a class="dropdown-item" href="#">Ser socio</a>
+                           <a class="dropdown-item" href="#">Acceder</a>
+                        </div>
+                     </li>
+                     <li class="nav-item active d-none d-lg-block">
+                        <a class="nav-link enlace-nav" href="#"><i class="fas fa-search"></i></a>
+                     </li>
+                     <li class="nav-item active">
+                        <a class="nav-link enlace-nav" href="#">ES</a>
+                     </li>
+                     <li class="nav-item active d-none d-lg-block">
+                        <a class="nav-link enlace-nav" href="login.html">
+                        <i class="fas fa-user h4"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </nav>
-        </div>
-    </header>
-
-
-    <!--Fin NavBar -->
-
-
-    <!-- 3 bloques de imagenes -->
-    <div class="container-fluid p-0 d-none d-lg-block" id="contenido">
-        <div class="row m-0">
+         </div>
+      </header>
+      <!--Fin NavBar -->
+      <!-- 3 bloques de imagenes -->
+      <div class="container-fluid p-0 d-none d-md-block" id="contenido">
+         <div class="row m-0">
             <div class="col-4 p-0">
-                <img src="./img/StockSnap_SNIKX3KGKD.jpg" alt="" class="fila1-img">
-                <div class="text-center fila1-texto">
-                    <h1>¡Hazte Socio!</h1>
-                </div>
+               <img src="./img/StockSnap_SNIKX3KGKD.jpg" alt="" class="fila1-img">
+               <div class="text-center fila1-texto">
+                  <h1>¡Hazte Socio!</h1>
+               </div>
             </div>
             <div class="col-4 p-0">
-                <img src="./img/nature-3114042_1280.jpg" alt="" class="fila1-img">
-                <div class="text-center fila1-texto ">
-                    <h1>El mejor club de ciclismo</h1>
-                </div>
+               <img src="./img/nature-3114042_1280.jpg" alt="" class="fila1-img">
+               <div class="text-center fila1-texto ">
+                  <h1>El mejor club de ciclismo</h1>
+               </div>
             </div>
             <div class="col-4 p-0">
-                <img src="./img/StockSnap_25EQDF6JMZ.jpg" alt="" class="fila1-img">
-                <div class="text-center fila1-texto">
-                    <h1>Noticias</h1>
-                </div>
+               <img src="./img/StockSnap_25EQDF6JMZ.jpg" alt="" class="fila1-img">
+               <div class="text-center fila1-texto">
+                  <h1>Noticias</h1>
+               </div>
             </div>
-        </div>
-    </div>
-
-        <!-- Carta actividad y partners -->
-        <div class="container my-5">
-            <div class="row flex-column flex-md-row m-0 justify-content-lg-between">
-                <!-- Actividad -->
-                <div class="card col-12 col-lg-7 border-success mx-auto" style="width: 18rem;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title pt-4">Actividad Viernes, 20 de marzo a las 10:00</h5>
-                        <h5> Carrera solidaria </h5>
-                        <h2 class="pt-4">10:02:20</h2>
-                    </div>
-                </div>
-                <!-- Partners -->
-                <div class="card col-12 col-lg-4 border-success mx-auto mt-5 mt-md-5 mt-lg-0" style="width: 18rem;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title pt-4">Partners Oficiales</h5>
-                        <div class="row justify-content-between py-3">
-                            <div class="col-3 p-0">
-                                <img src="./img/logo/PlayStation-Logo.png" class="partner" alt="">
-                            </div>
-                            <div class="col-3 p-0">
-                                <img src="./img/logo/Nike-Logo-1971.jpg" class="partner" alt="">
-                            </div>
-                            <div class="col-3 p-0">
-                                <img src="./img/logo/Logo_de_Cola_Cao.jpg" class="partner" alt="">
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-outline-success">Ver Todos</button>
-                    </div>
-                </div>
+         </div>
+      </div>
+      <!-- Carrusel para movil y tablet -->
+      <div id="carruselHome" class="carousel slide d-block d-md-none" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#carruselHome" data-slide-to="0" class="active"></li>
+            <li data-target="#carruselHome" data-slide-to="1"></li>
+            <li data-target="#carruselHome" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="./img/StockSnap_SNIKX3KGKD.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption">
+                  <h1>¡Hazte socio!</h1>
+               </div>
             </div>
-        </div>
-
-        <!-- Noticias -->
-        <div class="container-fluid py-5" id="noticias-home">
-            <div class="container">
-                <h1 class="text-center pb-4 text-white"> Noticias </h1>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> Hoy</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> Hoy</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> 10 Mar</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> 8 Mar</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> 4 Mar</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> 1 Mar</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> 25 Feb</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content. This card has even longer content than the first to show that
-                                    equal
-                                    height action.</p>
-                            </div>
-                            <div class="card-footer text-right">
-                                <small class="text-muted"><i class="far fa-clock"></i> 20 Feb</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item">
+               <img src="./img/nature-3114042_640.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption">
+                  <h1>El mejor club de ciclismo</h1>
+               </div>
             </div>
-        </div>
-        <!-- Fin Noticias -->
-
-        <!-- Imagenes con texto -->
-        <div class="container-fluid p-0">
-            <div class="row m-0">
-                <div class="col-12 col-lg-8 p-0">
-                    <div>
-                        <img src="./img/StockSnap_U75QCQN721.jpg" class="card-img-top" alt="...">
-                        <div id="quines-somos">
-                            <h1>¿Quiénes somos?</h1>
-                            <h4 class="pt-4">El club más grande de toda españa de ciclismo, llevamos 15 años realizando
-                                actividades y informando de las últimas noticias sobre el mundo del ciclismo</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./img/StockSnap_VKR6HOS0DC.jpg" class="card-img-top" alt="...">
-                        <div class="text-white" id="socio">
-                            <h1 class="pl-4 pt-4">Beneficios de ser socio</h1>
-                            <ul class="pt-3">
-                                <li class="pb-3 pl-5">
-                                    <i class="fas fa-percent"></i>
-                                    Descuentos exclusivos
-                                </li>
-                                <li class="pb-3 pl-5">
-                                    <i class="far fa-newspaper"></i>
-                                    Recibe las últimas noticias
-                                </li>
-                                <li class="pb-3 pl-5">
-                                    <i class="fas fa-bicycle"></i>
-                                    Realiza actividades exclusivas
-                                </li>
-                                <li class="pb-3 pl-5">
-                                    <i class="fas fa-toolbox"></i>
-                                    Recibe todas las novedades sobre las reuniones de la junta directiva
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 p-0 d-none d-lg-block">
-                    <img src="./img/cyclist-drinking-from-a-bottle-picjumbo-com.jpg" class="card-img-top"
-                        id="imagen-lateral-1" alt="...">
-                    <img src="./img/val-gardena-roads-dolomites-italy-picjumbo-com.jpg" class="card-img-top"
-                        id="imagen-lateral-2" alt="...">
-                </div>
+            <div class="carousel-item">
+               <img src="./img/StockSnap_BCMY03PRZ9-min.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption">
+                  <h1>Noticias</h1>
+               </div>
             </div>
-        </div>
-
-        <!-- Redes sociales -->
-        <div class="container py-5" id="redes-sociales">
-            <div class="row ">
-                <div class="col-12">
-                    <h1 class="text-center">Redes Sociales</h1>
-                </div>
+         </div>
+         <a class="carousel-control-prev" href="#carruselHome" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carruselHome" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+         </a>
+      </div>
+      <!-- Carta actividad y partners -->
+      <div class="container my-5">
+         <div class="row flex-column flex-md-row m-0 justify-content-lg-between">
+            <!-- Actividad -->
+            <div class="card col-12 col-lg-7 border-success mx-auto" style="width: 18rem;">
+               <div class="card-body text-center">
+                  <h5 class="card-title pt-4">Actividad Viernes, 20 de marzo a las 10:00</h5>
+                  <h5> Carrera solidaria </h5>
+                  <h2 class="pt-4">10:02:20</h2>
+               </div>
             </div>
-            <div class="row pt-3">
-                <div class="col-12 d-flex justify-content-center">
-                    <a class="mr-5 h1">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a class="mr-5 h1">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="mr-5 h1">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a class="h1">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
+            <!-- Partners -->
+            <div class="card col-12 col-lg-4 border-success mx-auto mt-5 mt-md-5 mt-lg-0" style="width: 18rem;">
+               <div class="card-body text-center">
+                  <h5 class="card-title pt-4">Partners Oficiales</h5>
+                  <div class="row justify-content-between py-3">
+                     <div class="col-3 p-0">
+                        <img src="./img/logo/PlayStation-Logo.png" class="partner" alt="">
+                     </div>
+                     <div class="col-3 p-0">
+                        <img src="./img/logo/Nike-Logo-1971.jpg" class="partner" alt="">
+                     </div>
+                     <div class="col-3 p-0">
+                        <img src="./img/logo/Logo_de_Cola_Cao.jpg" class="partner" alt="">
+                     </div>
+                  </div>
+                  <button type="button" class="btn btn-outline-success">Ver Todos</button>
+               </div>
             </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="container-fluid p-0" id="footer">
-            <div class="container pt-2">
-                <div class="row flex-column flex-lg-row justify-content-lg-between py-4 text-white">
-                    <div class="col-12 col-lg-5  d-none d-lg-block">
-                        <small>Copyright © - Todos los derechos reservados Adrián Morató</small>
-                    </div>
-                    <div class="col-12 col-lg-7 d-flex flex-column flex-lg-row justify-content-between  text-center"
-                        id="enlaces-footer">
-                        <a href="#">
-                            <p class="m-0">Términos Legales</p>
-                        </a>
-                        <a href="#">
-                            <p class="m-0">Políticas de privacidad</p>
-                        </a>
-                        <a href="#">
-                            <p class="m-0">Cookies</p>
-                        </a>
-                        <a href="#">
-                            <p class="m-0">Contactanos</p>
-                        </a>
-                    </div>
-                    <div class="col-12 col-lg-5 d-block d-lg-none text-center pt-4">
-                        <small>Copyright © - Todos los derechos reservados Adrián Morató</small>
-                    </div>
-                </div>
+         </div>
+      </div>
+      <!-- Noticias -->
+      <div class="container-fluid py-5" id="noticias-home">
+         <div class="container">
+            <h1 class="text-center pb-4 text-white"> Noticias </h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+               <div class="col mb-4">
+                  <div class="card">
+                     <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                           lead-in to
+                           additional content. This card has even longer content than the first to show that
+                           equal
+                           height action.
+                        </p>
+                     </div>
+                     <div class="card-footer text-right">
+                        <small class="text-muted"><i class="far fa-clock"></i> Hoy</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col mb-4">
+                  <div class="card">
+                     <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                           lead-in to
+                           additional content. This card has even longer content than the first to show that
+                           equal
+                           height action.
+                        </p>
+                     </div>
+                     <div class="card-footer text-right">
+                        <small class="text-muted"><i class="far fa-clock"></i> Hoy</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col mb-4">
+                  <div class="card">
+                     <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                           lead-in to
+                           additional content. This card has even longer content than the first to show that
+                           equal
+                           height action.
+                        </p>
+                     </div>
+                     <div class="card-footer text-right">
+                        <small class="text-muted"><i class="far fa-clock"></i> 10 Mar</small>
+                     </div>
+                  </div>
+               </div>
+               <div class="col mb-4">
+                  <div class="card">
+                     <img src="./img/nofoto.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural
+                           lead-in to
+                           additional content. This card has even longer content than the first to show that
+                           equal
+                           height action.
+                        </p>
+                     </div>
+                     <div class="card-footer text-right">
+                        <small class="text-muted"><i class="far fa-clock"></i> 8 Mar</small>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </footer>
-</body>
-
+            <div class="text-center pt-3">
+               <a href="#" class="btn btn-outline-light font-weight-bold">Ver más noticias</a>
+            </div>
+         </div>
+      </div>
+      <!-- Fin Noticias -->
+      <!-- Imagenes con texto -->
+      <div class="container-fluid p-0">
+         <div class="row m-0">
+            <div class="col-12 col-lg-8 p-0">
+               <div>
+                  <img src="./img/StockSnap_U75QCQN721.jpg" class="card-img-top" alt="...">
+                  <div id="quines-somos">
+                     <h1>¿Quiénes somos?</h1>
+                     <h4 class="pt-4">El club más grande de toda españa de ciclismo, llevamos 15 años realizando
+                        actividades y informando de las últimas noticias sobre el mundo del ciclismo
+                     </h4>
+                  </div>
+               </div>
+               <div>
+                  <img src="./img/StockSnap_VKR6HOS0DC.jpg" class="card-img-top" alt="...">
+                  <div class="text-white" id="socio">
+                     <h1 class="pl-4 pt-4">Beneficios de ser socio</h1>
+                     <ul class="pt-3">
+                        <li class="pb-3 pl-5">
+                           <i class="fas fa-percent"></i>
+                           Descuentos exclusivos
+                        </li>
+                        <li class="pb-3 pl-5">
+                           <i class="far fa-newspaper"></i>
+                           Recibe las últimas noticias
+                        </li>
+                        <li class="pb-3 pl-5">
+                           <i class="fas fa-bicycle"></i>
+                           Realiza actividades exclusivas
+                        </li>
+                        <li class="pb-3 pl-5">
+                           <i class="fas fa-toolbox"></i>
+                           Recibe todas las novedades sobre las reuniones de la junta directiva
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-4 p-0 d-none d-lg-block">
+               <img src="./img/cyclist-drinking-from-a-bottle-picjumbo-com-min.jpg" class="card-img-top"
+                  id="imagen-lateral-1" alt="...">
+               <img src="./img/val-gardena-roads-dolomites-italy-picjumbo-com-min.jpg" class="card-img-top"
+                  id="imagen-lateral-2" alt="...">
+            </div>
+         </div>
+      </div>
+      <!-- Redes sociales -->
+      <div class="container py-5" id="redes-sociales">
+         <div class="row ">
+            <div class="col-12">
+               <h1 class="text-center">Redes Sociales</h1>
+            </div>
+         </div>
+         <div class="row pt-3">
+            <div class="col-12 d-flex justify-content-center">
+               <a class="mr-5 h1">
+               <i class="fab fa-facebook-square"></i>
+               </a>
+               <a class="mr-5 h1">
+               <i class="fab fa-instagram"></i>
+               </a>
+               <a class="mr-5 h1">
+               <i class="fab fa-youtube"></i>
+               </a>
+               <a class="h1">
+               <i class="fab fa-twitter"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="container-fluid p-0" id="footer">
+         <div class="container pt-2">
+            <div class="row flex-column flex-lg-row justify-content-lg-between py-4 text-white">
+               <div class="col-12 col-lg-5  d-none d-lg-block">
+                  <small>Copyright © - Todos los derechos reservados Adrián Morató</small>
+               </div>
+               <div class="col-12 col-lg-7 d-flex flex-column flex-lg-row justify-content-between  text-center"
+                  id="enlaces-footer">
+                  <a href="#">
+                     <p class="m-0">Términos Legales</p>
+                  </a>
+                  <a href="#">
+                     <p class="m-0">Políticas de privacidad</p>
+                  </a>
+                  <a href="#">
+                     <p class="m-0">Cookies</p>
+                  </a>
+                  <a href="#">
+                     <p class="m-0">Contactanos</p>
+                  </a>
+               </div>
+               <div class="col-12 col-lg-5 d-block d-lg-none text-center pt-4">
+                  <small>Copyright © - Todos los derechos reservados Adrián Morató</small>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
